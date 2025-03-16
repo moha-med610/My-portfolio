@@ -8,7 +8,9 @@ const Hero = () => {
                 I,m <span className="text-red-600">Mohamed </span>Khaled</h1>
                 <p className="md:text-2xl text-xl mb-4">Front-End Developer & Web Designer</p>
                 <p className="mb-4">I'm a passionate web developer with expertise in <span className="text-2xl text-blue-600">React</span> , <span className="text-2xl">Next.js</span>, and modern web technologies. I love creating beautiful and functional website that solve real world problems.</p>
+                <a href="https://drive.google.com/file/d/1670D-YwFpUKlkUxRNFPuLm9YQUAUqDUc/view?usp=drive_link" target="_blanc">
                 <button className="bg-red-600 text-white px-3 py-2 w-max rounded-md">Download CV</button>
+              </a>
             </div>
             <div className="md:w-1/2 relative flex justify-center items-end">
             <img src="/images/hero.png" alt="" className="lg:h-[90vh] h-96"/>

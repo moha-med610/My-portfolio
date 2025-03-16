@@ -2,7 +2,7 @@
 
 const Cards = ({item}) => {
   return (
-    <div className="border border-red-500 rounded-lg w-[350px] lg:w-[400px] bg-red-50">
+    <div className="border border-red-500 rounded-lg w-[350px] lg:w-[400px] bg-red-50" key={item.id}>
       <img src={item.image} alt="" className="rounded-lg " />
       <div className="p-4">
         <h1 className="text-center font-semibold text-xl mb-2">{item.title}</h1>
