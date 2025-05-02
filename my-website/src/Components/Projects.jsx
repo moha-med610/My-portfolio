@@ -4,45 +4,35 @@ const Projects = () => {
 const Project=[
   {
     id: 1,
-    title: "مواقيت الصلاه",
-    desc: "A great site to make it easier to know the time of the next adhan Using (HTML, JavaScript, CSS).",
+    title: "Prayer Time",
+    desc: "Developed a responsive web application using React to display accurate daily prayer times for specific governorates in Egypt. Integrated with a trusted Islamic API to fetch real-time data, and implemented state management and conditional rendering for seamless user interaction. Focused on a clean UI/UX optimized for Arabic users, with support for location-specific prayer data and Hijri date display",
     image:"/images/myweb.png",
     live: "https://moqit.netlify.app",
+    gitHub: "https://github.com/moha-med610/prayer-time.git"
   },
   {
     id: 2,
-    title: "Canvas",
-    desc: "This is a unique image editing program using (HTML, JavaScript, CSS).",
-    image:"/images/canavs.png",
-    live: "https://canavs.netlify.app/",
+    title: "Joli cosmetics Store",
+    desc: "Developed a complete cosmetics e-commerce platform using React, Node.js, and MongoDB. Implemented features including user authentication, product filtering and an admin dashboard for product. Focused on a responsive UI using Tailwind CSS and optimized backend APIs following RESTful principle",
+    image:"images/joli.png",
+    live: "https://joli-cosmetics.com",
+    gitHub: "https://github.com/moha-med610/E-Commerce-Joli-BackEnd.git"
   },
   {
     id: 3,
-    title: "Counter",
-    desc: "This is a simple program for counting the required numbers up to the number using (HTML, JavaScript, Tailwind).",
-    image:"/images/counter.png",
-    live: "https://counterfor.netlify.app/",
-  },
-  {
-    id: 4,
-    title: "O-Clock",
-    desc: "This is a simple O-Clock using (HTML, JavaScript, CSS).",
-    image:"images/oclock.png",
-    live: "https://oclock12.netlify.app/",
-  },
-  {
-    id: 5,
     title: "Weather",
     desc: "This is a weather application for all cities of the world, a wonderful application that is proportional to all screens using (HTML, JavaScript, CSS).",
     image:"/images/weather.png",
     live: "https://weather132.netlify.app/",
+    gitHub: "https://github.com/moha-med610/weather-app.git"
   },
   {
-    id: 6,
+    id: 4,
     title: "Translation App",
     desc: "This is a Translation app from arabic to English using (HTML, JavaScript, Tailwind).",
     image:"/images/tran.png",
     live: "https://translation10.netlify.app/",
+    gitHub: "https://github.com/moha-med610/translation-app.git"
   },
 ]
 

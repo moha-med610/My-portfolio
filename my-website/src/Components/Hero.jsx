@@ -6,8 +6,8 @@ const Hero = () => {
             <div className="md:w-1/2 mb-8 md:mb-0 flex flex-col space-y-4 px-6 lg:mt:mt-0 mt-10">
                 <h1 className="lg:text-7xl text-4xl font-bold lg:leading-snug">Hi There, <br />
                 I,m <span className="text-red-600">Mohamed </span>Khaled</h1>
-                <p className="md:text-2xl text-xl mb-4">Front-End Developer & Web Designer</p>
-                <p className="mb-4">I'm a passionate web developer with expertise in <span className="text-2xl text-blue-600">React</span> , <span className="text-2xl">Next.js</span>, and modern web technologies. I love creating beautiful and functional website that solve real world problems.</p>
+                <p className="md:text-2xl text-xl mb-4">Full Stack Developer & Web Designer</p>
+                <p className="mb-4">I'm a passionate web developer with expertise in <span className="text-2xl text-blue-600">React</span> , <span className="text-2xl">Express js</span>, and modern web technologies. I love creating beautiful and functional website that solve real world problems.</p>
                 <a href="https://drive.google.com/file/d/1670D-YwFpUKlkUxRNFPuLm9YQUAUqDUc/view?usp=drive_link" target="_blanc">
                 <button className="bg-red-600 text-white px-3 py-2 w-max rounded-md">Download CV</button>
               </a>
