@@ -40,7 +40,7 @@ const Hero = () => {
               that solve real world problems.
             </p>
             <a
-              href="https://drive.google.com/file/d/1jjiAOGkjVIQ1bHKZnaUgvhtt5Nb602da/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1yBICuc4IaQ1PYWN0X_tORSP8mDygudHM/view?usp=drive_link"
               target="_blanc"
             >
               <button className="bg-red-600 text-white px-3 py-2 w-max rounded-md">
