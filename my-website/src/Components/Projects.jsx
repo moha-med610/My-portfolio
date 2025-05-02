@@ -14,7 +14,7 @@ const Project=[
     id: 2,
     title: "Joli cosmetics Store",
     desc: "Developed a complete cosmetics e-commerce platform using React, Node.js, and MongoDB. Implemented features including user authentication, product filtering and an admin dashboard for product. Focused on a responsive UI using Tailwind CSS and optimized backend APIs following RESTful principle",
-    image:"images/joli.png",
+    image:"/images/Screenshot 2025-05-02 125536.png",
     live: "https://joli-cosmetics.com",
     gitHub: "https://github.com/moha-med610/E-Commerce-Joli-BackEnd.git"
   },
