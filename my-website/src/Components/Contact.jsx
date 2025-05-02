@@ -4,7 +4,7 @@ import { TbBrandLinkedinFilled } from "react-icons/tb";
 import { SlSocialGithub } from "react-icons/sl";
 import { FaFacebook } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
-import { TbBrandWhatsapp } from "react-icons/tb";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 const Contact = () => {
   const [contactData, setContactData] = useState(null);
@@ -93,7 +93,7 @@ const Contact = () => {
                 target="_blank"
                 className="text-gray-400 hover:text-green-600"
               >
-                <TbBrandWhatsapp size={32} />
+                <IoLogoWhatsapp size={32} />
               </a>
               <a
                 href="https://www.linkedin.com/in/mo%C4%A5%C3%A3med-k%C4%A5aled-42509b322/"
