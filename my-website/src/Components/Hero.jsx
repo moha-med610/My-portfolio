@@ -34,7 +34,7 @@ const Hero = () => {
             </p>
             <p className="mb-4">
               I'm a passionate web developer with expertise in
-              <span className="text-2xl font-bold">React, </span>
+              <span className="text-2xl font-bold"> React, </span>
               <span className="text-2xl font-bold">Express js</span>, and modern
               web technologies. I love creating beautiful and functional website
               that solve real world problems.
