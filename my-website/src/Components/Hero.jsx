@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import { FaFacebook } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
-import { SlSocialGithub } from "react-icons/sl";
+import { FaGithub } from "react-icons/fa";
 import { TbBrandLinkedinFilled } from "react-icons/tb";
 
 const Hero = () => {
@@ -91,7 +91,7 @@ const Hero = () => {
           rel="noopener noreferrer"
           className="text-gray-500 hover:text-black transition-colors duration-300"
         >
-          <SlSocialGithub size={70} />
+          <FaGithub size={70} />
         </a>
         <a
           href="https://www.linkedin.com/in/mo%C4%A5%C3%A3med-k%C4%A5aled-42509b322/"

@@ -1,3 +1,17 @@
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io";
+import { FaReact } from "react-icons/fa";
+import { FaNodeJs } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { SiMongodb } from "react-icons/si";
+import { SiMysql } from "react-icons/si";
+import { FaBootstrap } from "react-icons/fa6";
+import { SiExpress } from "react-icons/si";
+import { FaGitAlt } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
+
+
 
 const About = () => {
   return (
@@ -19,36 +33,56 @@ const About = () => {
                             I started my journey in web development with a passion for creating intuitive and scalable applications. With proficiency in the <span className="text-xl text-slate-900 font-semibold">HTML, CSS, JavaScript, Tailwind, BootStrap, React, Node.js, Express.js, Mongo DB, MySQL</span>
                             </p>
                         </div>
-                        <div className="border border-red-200 rounded-lg md:p-7 py-7 flex flex-col gap-8 items-center shadow-lg shadow-red-300">
-                            <h3 className="text-2xl font-semibold text-red-600">Skills & Experience</h3>
+                        <div className="border rounded-lg md:p-7 py-7 flex flex-col gap-8 items-center shadow-lg shadow-gray-300">
+                            <h3 className="text-2xl font-semibold text-black">Skills & Experience</h3>
                             <div className="flex items-center justify-center flex-wrap gap-3">
-                                <div className="border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300">
-                                    <img src="/images/html.png" alt="" className="w-16" />
-                                    <span className="font-semibold">HTML</span>
+                                <div className="text-orange-600 border border-gray-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-gray-300">
+                                    <FaHtml5 size={50} />
+                                    <span className="font-semibold text-black">HTML</span>
                                 </div>
-                                <div className="border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300">
-                                    <img src="/images/css.png" alt="" className="w-14" />
-                                    <span className="font-semibold">CSS</span>
+                                <div className="text-blue-500 border border-gray-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-gray-300">
+                                    <FaCss3Alt size={50} />
+                                    <span className="font-semibold text-black">CSS</span>
                                 </div>
-                                <div className="border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300">
-                                    <img src="/images/js-logo.png" alt="" className="w-16 rounded-full" />
-                                    <span className="font-semibold">JavaScript</span>
+                                <div className="text-yellow-500 border border-gray-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-gray-300">
+                                    <IoLogoJavascript size={50} />
+                                    <span className="font-semibold text-black">JavaScript</span>
                                 </div>
-                                <div className="border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300">
-                                    <img src="/images/react-logo.png" alt="" className="w-14 rounded-full" />
-                                    <span className="font-semibold">React.js</span>
+                                <div className="text-blue-700 border border-gray-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-gray-300">
+                                    <FaReact size={50} />
+                                    <span className="font-semibold text-black">React.js</span>
                                 </div>
-                                <div className="border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300">
-                                    <img src="/images/node.png" alt="" className="w-14 rounded-full" />
-                                    <span className="font-semibold">Node.js</span>
+                                <div className="text-green-700 border border-gray-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-gray-300">
+                                    <FaNodeJs size={50} />
+                                    <span className="font-semibold text-black">Node.js</span>
                                 </div>
-                                <div className="border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300">
-                                    <img src="/images/tailwind.png" alt="" className="w-14 rounded-full" />
-                                    <span className="font-semibold">Tailwind CSS</span>
+                                <div className="text-cyan-600 border border-gray-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-gray-300">
+                                    <RiTailwindCssFill size={50} />
+                                    <span className="font-semibold text-black">Tailwind CSS</span>
                                 </div>
-                                <div className="border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300">
-                                    <img src="/images/ui.png" alt="" className="w-24 rounded-full" />
-                                    <span className="font-semibold">UI/UX</span>
+                                <div className="text-violet-700 border border-gray-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-gray-300">
+                                    <FaBootstrap size={50} />
+                                    <span className="font-semibold text-black">Tailwind CSS</span>
+                                </div>
+                                <div className="text-black border border-gray-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-gray-300">
+                                    <SiExpress size={50} />
+                                    <span className="font-semibold text-black">Express.js</span>
+                                </div>
+                                <div className="text-green-700 border border-gray-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-gray-300">
+                                    <SiMongodb size={50} />
+                                    <span className="font-semibold text-black">Mongo DB</span>
+                                </div>
+                                <div className="text-sky-700 border border-gray-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-gray-300">
+                                    <SiMysql size={50} />
+                                    <span className="font-semibold text-black">MYSQL</span>
+                                </div>
+                                <div className="text-orange-600 border border-gray-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-gray-300">
+                                    <FaGitAlt size={50} />
+                                    <span className="font-semibold text-black">GIT</span>
+                                </div>
+                                <div className="text-black border border-gray-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-gray-300">
+                                    <FaGithub size={50} />
+                                    <span className="font-semibold text-black">Git hub</span>
                                 </div>
                             </div>
                         </div>

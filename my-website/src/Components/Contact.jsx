@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Lottie from "lottie-react";
 import { TbBrandLinkedinFilled } from "react-icons/tb";
-import { SlSocialGithub } from "react-icons/sl";
+import { FaGithub } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { IoLogoWhatsapp } from "react-icons/io";
@@ -107,7 +107,7 @@ const Contact = () => {
                 target="_blank"
                 className="text-gray-400 hover:text-black"
               >
-                <SlSocialGithub size={32} />
+                <FaGithub size={32} />
               </a>
             </div>
             {contactData && (
