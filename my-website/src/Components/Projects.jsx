@@ -34,6 +34,14 @@ const Project=[
     live: "https://translation10.netlify.app/",
     gitHub: "https://github.com/moha-med610/translation-app.git"
   },
+  {
+    id: 5,
+    title: "Tdo List App",
+    desc: "A task management web app built with MongoDB, Express, React, and Node.js. Features task creation, editing, and deletion with a responsive UI and RESTful API backend — structured for scalability and clean code.",
+    image:"/images/todo.png",
+    live: "https://todo120.netlify.app/",
+    gitHub: "https://github.com/moha-med610/Todo-Api.git"
+  },
 ]
 
   return (
