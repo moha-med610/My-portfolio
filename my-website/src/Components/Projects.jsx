@@ -5,7 +5,7 @@ const Project=[
   {
     id: 1,
     title: "Prayer Time",
-    desc: "Developed a responsive web application using React to display accurate daily prayer times for specific governorates in Egypt. Integrated with a trusted Islamic API to fetch real-time data, and implemented state management and conditional rendering for seamless user interaction. Focused on a clean UI/UX optimized for Arabic users, with support for location-specific prayer data and Hijri date display",
+    desc: "Developed a responsive web application using React to display accurate daily prayer times for specific governorates in Egypt. Integrated with a trusted Islamic API to fetch real-time data, and implemented state management and conditional rendering for seamless user interaction. Focused on a clean UI/UX optimized for Arabic users, with support for location-specific prayer data and date",
     image:"/images/myweb.png",
     live: "https://moqit.netlify.app",
     gitHub: "https://github.com/moha-med610/prayer-time.git"
