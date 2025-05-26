@@ -50,7 +50,7 @@ const Projects = () => {
       image: "/images/elraqm.png",
       live: "https://elraqm.netlify.app/",
       gitHub: "https://github.com/moha-med610/Analyses_national_id.git",
-    }
+    },
   ];
 
   const cardVariants = {
@@ -67,18 +67,15 @@ const Projects = () => {
   };
 
   return (
-    
-      <section
-        id="projects"
-        className="relative border-b-2 border-gray-500 py-10 px-4"
-      >
-        <div className="mb-16 max-w-7xl mx-auto flex flex-col items-center justify-center">
+    <section className="relative border-b-2 border-gray-500 py-10 px-4">
+      <div className="mb-16 max-w-7xl mx-auto flex flex-col items-center justify-center">
         <motion.div
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: false, amount: 0.2 }}
-      variants={cardVariants}
-    >
+          id="projects"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.2 }}
+          variants={cardVariants}
+        >
           <h2 className="text-3xl font-bold mb-20 text-white border-b-2 border-gray-500 pb-4 w-full text-center">
             Projects
           </h2>
@@ -87,9 +84,9 @@ const Projects = () => {
               return <Cards key={item.id} item={item} />;
             })}
           </div>
-    </motion.div>
-        </div>
-      </section>
+        </motion.div>
+      </div>
+    </section>
   );
 };
 

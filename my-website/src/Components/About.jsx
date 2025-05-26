@@ -27,9 +27,10 @@ const cardVariants = {
 
 const About = () => {
   return (
-      <div className="relative" id="about">
+      <div className="relative">
         <div className=" py-12 border-b-2 border-gray-500 ">
           <motion.div
+           id="about"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: false, amount: 0.2 }}
@@ -68,59 +69,59 @@ const About = () => {
                     Skills & Experience
                   </h3>
                   <div className="flex items-center justify-center flex-wrap gap-3">
-                    <div className="text-orange-600 border flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md ">
+                    <div className="text-orange-600 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-gray-900 hover:scale-105 transition-transform duration-300">
                       <FaHtml5 size={50} />
                       <span className="font-semibold text-gray-300">HTML</span>
                     </div>
-                    <div className="text-blue-500 border  flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md ">
+                    <div className="text-blue-500 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-gray-900 hover:scale-105 transition-transform duration-300">
                       <FaCss3Alt size={50} />
                       <span className="font-semibold text-gray-300">CSS</span>
                     </div>
-                    <div className="text-yellow-500 border  flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md ">
+                    <div className="text-yellow-500 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-gray-900 hover:scale-105 transition-transform duration-300">
                       <IoLogoJavascript size={50} />
                       <span className="font-semibold text-gray-300">
                         JavaScript
                       </span>
                     </div>
-                    <div className="text-blue-700 border  flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md ">
+                    <div className="text-blue-700 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-gray-900 hover:scale-105 transition-transform duration-300">
                       <FaReact size={50} />
                       <span className="font-semibold text-gray-300">React.js</span>
                     </div>
-                    <div className="text-green-700 border  flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md ">
+                    <div className="text-green-700 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-gray-900 hover:scale-105 transition-transform duration-300">
                       <FaNodeJs size={50} />
                       <span className="font-semibold text-gray-300">Node.js</span>
                     </div>
-                    <div className="text-cyan-600 border  flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md ">
+                    <div className="text-cyan-600 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-gray-900 hover:scale-105 transition-transform duration-300">
                       <RiTailwindCssFill size={50} />
                       <span className="font-semibold text-gray-300">
                         Tailwind CSS
                       </span>
                     </div>
-                    <div className="text-violet-700 border  flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md ">
+                    <div className="text-violet-700 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-gray-900 hover:scale-105 transition-transform duration-300">
                       <FaBootstrap size={50} />
                       <span className="font-semibold text-gray-300">
                         BootStrap
                       </span>
                     </div>
-                    <div className="text-black border  flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md ">
+                    <div className="text-black flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-gray-900 hover:scale-105 transition-transform duration-300">
                       <SiExpress size={50} />
                       <span className="font-semibold text-gray-300">
                         Express.js
                       </span>
                     </div>
-                    <div className="text-green-700 border  flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md ">
+                    <div className="text-green-700 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-gray-900 hover:scale-105 transition-transform duration-300">
                       <SiMongodb size={50} />
                       <span className="font-semibold text-gray-300">Mongo DB</span>
                     </div>
-                    <div className="text-sky-700 border  flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md ">
+                    <div className="text-sky-700 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-gray-900 hover:scale-105 transition-transform duration-300">
                       <SiMysql size={50} />
                       <span className="font-semibold text-gray-300">MYSQL</span>
                     </div>
-                    <div className="text-orange-600 border  flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md ">
+                    <div className="text-orange-600 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-gray-900 hover:scale-105 transition-transform duration-300">
                       <FaGitAlt size={50} />
                       <span className="font-semibold text-gray-300">GIT</span>
                     </div>
-                    <div className="text-black border  flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md ">
+                    <div className="text-black flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-gray-900 hover:scale-105 transition-transform duration-300">
                       <FaGithub size={50} />
                       <span className="font-semibold text-gray-300">Git hub</span>
                     </div>
