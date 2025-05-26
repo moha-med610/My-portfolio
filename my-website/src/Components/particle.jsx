@@ -29,7 +29,7 @@ export default function Particle() {
           options={{
             background: {
                 color: {
-                  value: "#fff",
+                  value: "#172b4d",
                 },
               },
             fpsLimit: 120,
@@ -57,10 +57,10 @@ export default function Particle() {
             },
             particles: {
               color: {
-                value: "#ed2218",
+                value: "#fff",
               },
               links: {
-                color: "#f7655e",
+                color: "#fff",
                 distance: 150,
                 enable: true,
                 opacity: 0.5,

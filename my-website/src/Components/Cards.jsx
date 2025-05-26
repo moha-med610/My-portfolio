@@ -1,39 +1,71 @@
 import { FaGithub } from "react-icons/fa";
 import { GrFormView } from "react-icons/gr";
+import { motion } from "framer-motion";
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: {
+    opacity: 1,
+    y: 1,
+    scale: 1,
+    transition: {
+      ease: "easeInOut",
+      duration: 1,
+    },
+  },
+};
 
 const Cards = ({ item }) => {
   return (
-    <div className="border border-red-500 rounded-lg w-[350px] lg:w-[400px] bg-red-50 lg:h-full flex flex-col">
-      <img src={item.image} alt="" className="rounded-t-lg" />
-      
-      <div className="p-4 flex-1 flex flex-col justify-between bg-gray-200">
-        <div>
-          <h1 className="text-center font-semibold text-xl mb-2">{item.title}</h1>
-          <p className="text-gray-700">{item.desc}</p>
+    <>
+    <motion.div
+      className="w-[90%] max-w-[400px] bg-white rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.08)] overflow-hidden border border-gray-200 hover:shadow-xl mx-auto"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false, amount: 0.2 }}
+      variants={cardVariants}
+    >
+      <div className="w-full h-56 relative overflow-hidden group">
+        <img
+          src={item.image}
+          alt={item.title}
+          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+        />
+        <div className="absolute inset-0 bg-black/10"></div>
+      </div>
+
+      <div className="p-6 flex flex-col justify-between bg-gradient-to-b from-white to-gray-50">
+        <div className="text-center">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+            {item.title}
+          </h2>
+          <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
         </div>
-        
-        <div className="flex justify-start gap-3 mt-3">
+
+        <div className="flex justify-center gap-4 mt-6">
           <a
             href={item.live}
             target="_blank"
-            className="bg-red-500 hover:bg-red-600 transition text-white px-3 py-2 rounded-md text-center"
             rel="noopener noreferrer"
+            className="flex items-center gap-2 bg-red-500 hover:bg-red-600 text-white px-5 py-2 rounded-full shadow-md transition-all duration-300 hover:scale-105"
           >
-            <GrFormView size={20} className="inline-block mr-1" />
-            Live Preview
+            <GrFormView size={18} />
+            <span className="text-sm font-medium">Preview</span>
           </a>
+
           <a
             href={item.gitHub}
             target="_blank"
-            className="bg-gray-800 hover:bg-gray-900 transition text-white px-3 py-2 rounded-md"
             rel="noopener noreferrer"
+            className="flex items-center gap-2 bg-gray-900 hover:bg-black text-white px-5 py-2 rounded-full shadow-md transition-all duration-300 hover:scale-105"
           >
-            <FaGithub size={20} className="inline-block mr-4" />
-            GitHub
+            <FaGithub size={18} />
+            <span className="text-sm font-medium">GitHub</span>
           </a>
         </div>
       </div>
-    </div>
+      </motion.div>
+      </>
   );
 };
 

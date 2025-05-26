@@ -61,17 +61,17 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="z-50 bg-gray-800 relative py-10 px-5 md:px-0"
+      className="z-50 relative py-10 px-5 md:px-0"
     >
       <div className="mb-16 max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="md:w-1/2 mb-8 ml-2 md:mb-0">
-            <h2 className="text-3xl font-bold mb-3 text-red-500">
+            <h2 className="text-3xl font-bold mb-3 text-[#5e72e4]">
               Get in Touch
             </h2>
-            <p className="mb-4 text-white/85">
+            <p className="mb-4 text-lg text-white/85 font-thin">
               I'm always open to new opportunities and collaboration. Feel free
-              to reach out!
+              to reach out !
             </p>
             <div className="flex space-x-4 mb-5">
               <a
@@ -119,69 +119,124 @@ const Contact = () => {
           </div>
           <form
             onSubmit={handleSubmit}
-            className="w-full md:w-1/2 bg-gray-100 rounded-lg border border-red-300 shadow-lg shadow-red-500 p-10"
+            className="w-full max-w-lg bg-white/5 rounded-3xl border border-white/10 shadow-2xl p-8 backdrop-blur-lg transition-all duration-300"
           >
-            <h1 className="text-gray-900 text-4xl font-bold mb-7">
-              Contact Me
+            <h1 className="text-3xl font-thin text-white mb-6 text-center bg-[#f4f5f7] bg-clip-text text-transparent">
+              Contact With Me
             </h1>
-            <div className="mb-4">
-              <label
-                htmlFor="name"
-                className="block text-sm font-medium text-gray-700"
-              >
-                Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-                className="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                placeholder="Enter Your Name"
-              />
 
-              <label
-                htmlFor="email"
-                className="block text-sm font-medium text-gray-700"
-              >
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                className="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                placeholder="Enter Your Email"
-              />
+            <div className="space-y-5">
+              {/* Name */}
+              <div className="group relative">
+                <input
+                  type="text"
+                  id="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                  className="w-full px-4 py-3 rounded-2xl bg-white/10 border border-white/20 focus:border-blue-500 focus:ring-1 focus:ring-cyan-500/30 text-white placeholder-transparent peer outline-none transition-all"
+                  placeholder="Your Name"
+                />
+                <label
+                  htmlFor="name"
+                  className="absolute left-4 top-3 text-gray-400 text-sm transition-all duration-200
+        peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500
+        peer-focus:top-[-0.6rem] peer-focus:text-md font-semibold peer-focus:text-gray-700 peer-focus:bg-blue-500 px-2 rounded-full"
+                >
+                  Your Name
+                </label>
+              </div>
 
-              <label
-                htmlFor="message"
-                className="block text-sm font-medium text-gray-700"
+              {/* Email */}
+              <div className="group relative">
+                <input
+                  type="email"
+                  id="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                  className="w-full px-4 py-3 rounded-2xl bg-white/10 border border-white/20 focus:border-blue-500 focus:ring-1 focus:ring-cyan-500/30 text-white placeholder-transparent peer outline-none transition-all"
+                  placeholder="Email Address"
+                />
+                <label
+                  htmlFor="email"
+                  className="absolute left-4 top-3 text-gray-400 text-sm transition-all duration-200
+        peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500
+        peer-focus:top-[-0.6rem] peer-focus:text-md font-semibold peer-focus:text-gray-700 peer-focus:bg-blue-500 px-2 rounded-full"
+                >
+                  Email Address
+                </label>
+              </div>
+
+              {/* Message */}
+              <div className="group relative">
+                <textarea
+                  id="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                  rows={4}
+                  className="w-full px-4 py-3 rounded-2xl bg-white/10 border border-white/20 focus:border-blue-500 focus:ring-1 focus:ring-cyan-500/30 text-white placeholder-transparent peer outline-none transition-all resize-none"
+                  placeholder="Your Message"
+                />
+                <label
+                  htmlFor="message"
+                  className="absolute left-4 top-3 text-gray-400 text-sm transition-all duration-200
+        peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500
+        peer-focus:top-[-0.6rem] peer-focus:text-md font-semibold peer-focus:text-gray-700 peer-focus:bg-blue-500 px-2 rounded-full"
+                >
+                  Your Message
+                </label>
+              </div>
+
+              {/* Submit Button */}
+              <button
+                type="submit"
+                disabled={loading}
+                className="w-full py-3 px-6 bg-[#5e72e4] text-white font-semibold rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-opacity-50 disabled:opacity-60 disabled:cursor-not-allowed"
               >
-                Message
-              </label>
-              <textarea
-                id="message"
-                value={formData.message}
-                onChange={handleChange}
-                required
-                className="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                placeholder="Enter your Message"
-              />
+                {loading ? (
+                  <span className="flex items-center justify-center">
+                    <svg
+                      className="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <circle
+                        className="opacity-25"
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        stroke="currentColor"
+                        strokeWidth="4"
+                      ></circle>
+                      <path
+                        className="opacity-75"
+                        fill="currentColor"
+                        d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                      ></path>
+                    </svg>
+                    Sending...
+                  </span>
+                ) : (
+                  "Send Message"
+                )}
+              </button>
+
+              {/* Response Message */}
+              {responseMessage && (
+                <div
+                  className={`mt-4 p-3 rounded-xl text-sm ${
+                    responseMessage.includes("success")
+                      ? "bg-green-500/10 text-green-400"
+                      : "bg-red-500/10 text-red-400"
+                  }`}
+                >
+                  {responseMessage}
+                </div>
+              )}
             </div>
-            <button
-              type="submit"
-              className="bg-red-500 text-white px-3 py-2 rounded-lg"
-              disabled={loading}
-            >
-              {loading ? "Sending..." : "Send Message"}
-            </button>
-            {responseMessage && (
-              <p className="mt-4 text-gray-900">{responseMessage}</p>
-            )}
           </form>
         </div>
       </div>
