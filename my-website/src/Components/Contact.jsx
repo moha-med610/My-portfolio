@@ -73,7 +73,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="z-50 relative py-10 px-5 md:px-0" id="contact">
+    <section className="relative py-10 px-5 md:px-0" id="contact">
       <motion.div
         initial="hidden"
         whileInView="visible"
