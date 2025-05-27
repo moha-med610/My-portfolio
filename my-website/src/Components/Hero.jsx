@@ -45,14 +45,14 @@ const Hero = () => {
               web technologies. I love creating beautiful and functional website
               that solve real world problems.
             </p>
+            <button className="bg-blue-700 hover:bg-blue-800 text-white px-3 py-2 w-max rounded-md">
             <a
               href="https://drive.google.com/file/d/1yBICuc4IaQ1PYWN0X_tORSP8mDygudHM/view?usp=drive_link"
               target="_blanc"
             >
-              <button className="bg-blue-700 hover:bg-blue-800 text-white px-3 py-2 w-max rounded-md">
                 Download CV
-              </button>
             </a>
+              </button>
           </div>
           <div className="md:w-1/2 relative z-10 flex justify-center items-end">
             <img
