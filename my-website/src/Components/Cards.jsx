@@ -19,7 +19,7 @@ const Cards = ({ item }) => {
   return (
     <>
     <motion.div
-      className="w-[90%] max-w-[400px] bg-white rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.08)] overflow-hidden border border-gray-200 hover:shadow-xl mx-auto"
+      className="w-[90%] max-w-[400px] bg-white bg-opacity-30 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.08)] overflow-hidden hover:shadow-xl mx-auto"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: false, amount: 0.2 }}
@@ -34,12 +34,12 @@ const Cards = ({ item }) => {
         <div className="absolute inset-0 bg-black/10"></div>
       </div>
 
-      <div className="p-6 flex flex-col justify-between bg-gradient-to-b from-white to-gray-50">
+      <div className="p-6 flex flex-col justify-between bg-black bg-opacity-40">
         <div className="text-center">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+          <h2 className="text-2xl font-semibold text-gray-300 mb-2">
             {item.title}
           </h2>
-          <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
+          <p className="text-gray-200 text-sm leading-relaxed">{item.desc}</p>
         </div>
 
         <div className="flex justify-center gap-4 mt-6">
