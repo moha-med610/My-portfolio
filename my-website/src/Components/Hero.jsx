@@ -36,7 +36,7 @@ const Hero = () => {
               I,m <span className="text-teal-400" ref={el} />
             </h1>
             <p className="md:text-2xl text-xl mb-4 text-gray-400">
-              Full Stack Developer & Web Designer
+              Full Stack Developer
             </p>
             <p className="mb-4 text-gray-400">
               I'm a passionate web developer with expertise in
