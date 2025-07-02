@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <div className="flex justify-center items-center w-full">
       <header
-        className="fixed top-0 z-50 w-[95%] sm:w-[90%] md:w-3/4 lg:w-2/3 xl:w-1/2 mx-auto bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 px-4 rounded-full shadow-lg m-4">
+        className="fixed top-0 z-50 w-[95%] sm:w-[90%] md:w-3/4 lg:w-2/3 xl:w-1/2 mx-auto bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 px-4 rounded-3xl shadow-lg m-4">
         <div className="max-w-7xl mx-auto flex h-14 items-center">
           <div className="md:mr-4 flex justify-between w-full">
             <a
